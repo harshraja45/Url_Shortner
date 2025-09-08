@@ -13,6 +13,10 @@ A **React + Vite** frontend application to shorten URLs, with optional validity 
 - **Persistent storage** using localStorage.
 - Fully responsive design.
 
+- #screenshot
+
+- 
+
 
 
 ## 🛠️ Tech Stack
