@@ -14,12 +14,10 @@ A **React + Vite** frontend application to shorten URLs, with optional validity 
 - Fully responsive design.
 
 ## Screenshots
+## Project Screenshot
 
-**Homepage**
-![project](shortner.png)
+![URL Shortener Screenshot](screenshots/shortnerimg.png)
 
-**Shortened URLs**
-![Result Page](screenshots/result-page.png)
 
 
 - 
