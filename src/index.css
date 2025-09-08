@@ -1,0 +1,124 @@
+:root {
+  --text-color: #ffffff;
+  --background-color: #121212;
+  --paper-bg: rgba(30, 30, 30, 0.85);
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --secondary-color: #ff7e5f;
+  --secondary-hover: #feb47b;
+  --input-bg: #2a2a2a;
+  --border-radius: 12px;
+  --shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #646cff, #535bf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.MuiPaper-root {
+  background-color: var(--paper-bg) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--shadow) !important;
+  transition: all 0.3s ease;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 8px 20px;
+}
+
+.MuiTextField-root input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  padding: 0.7rem 1rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  border: 1px solid #444;
+}
+
+.MuiTextField-root input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.MuiTextField-root label {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.MuiTextField-root label.Mui-focused {
+  color: var(--primary-color);
+}
+
+/* Big Attractive Buttons with Smooth Gradient Hover */
+.button-box button {
+  background: linear-gradient(135deg, #000, #000); /* initial black */
+  background-size: 200% 200%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.9em 2em;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+  margin-right: 12px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-box button:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover), var(--primary-color));
+  background-size: 300% 300%;
+  animation: gradientMove 2s linear infinite;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.button-box button:disabled {
+  background: #333;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding: 1rem !important;
+  }
+  .MuiPaper-root {
+    padding: 1rem !important;
+  }
+}

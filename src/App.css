@@ -1,0 +1,119 @@
+:root {
+  --text-color: #ffffff;
+  --background-color: #121212;
+  --paper-bg: rgba(30, 30, 30, 0.85);
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --secondary-color: #ff7e5f;
+  --secondary-hover: #feb47b;
+  --input-bg: #2a2a2a;
+  --border-radius: 10px;
+  --shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #646cff, #535bf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Paper */
+.MuiPaper-root {
+  background-color: var(--paper-bg) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--shadow) !important;
+  transition: all 0.3s ease;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 8px 20px;
+}
+
+/* Input Fields */
+.MuiTextField-root input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  border: 1px solid #444;
+}
+
+.MuiTextField-root input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.MuiTextField-root label {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.MuiTextField-root label.Mui-focused {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.button-box button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7em 1.5em;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.button-box button:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+/* Disabled button */
+.button-box button:disabled {
+  background: #333;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding: 1rem !important;
+  }
+  .MuiPaper-root {
+    padding: 1rem !important;
+  }
+}
