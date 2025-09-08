@@ -16,7 +16,7 @@ A **React + Vite** frontend application to shorten URLs, with optional validity 
 ## Screenshots
 ## Project Screenshot
 
-![URL Shortener Screenshot](screenshots/shortnerimg.png)
+![URL Shortener Screenshot](shortnerimg.png)
 
 
 
