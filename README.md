@@ -1,12 +1,43 @@
-# React + Vite
+# URL Shortener
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + Vite** frontend application to shorten URLs, with optional validity periods and custom shortcodes. Designed with a sleek UI, gradient buttons, and smooth transitions for a professional user experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Shorten up to **5 URLs concurrently**.
+- Optional **validity period** for each shortened URL.
+- Optional **custom shortcode** for personalized links.
+- Displays **original URL, shortened URL, shortcode, and expiry date**.
+- **Clear All** button to reset inputs and results.
+- Styled with **Material UI**, gradient buttons, and dark mode-friendly design.
+- **Persistent storage** using localStorage.
+- Fully responsive design.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🛠️ Tech Stack
+
+- **React** (Functional components & hooks)
+- **Vite** (Fast build tool)
+- **Material UI** (UI components)
+- **localStorage** (Data persistence)
+- **CSS3** (Custom styling with gradients and hover effects)
+- **shrtco.de API** (URL shortening)
+
+## ⚡ How to Run Locally
+
+1. Clone the repository:
+
+```bash
+
+
+📄 License
+
+---
+
+If you want, I can also **create a shorter, GitHub-friendly version** with **badges, live demo link, and quick instructions** so it looks more professional on your repo page.  
+
+Do you want me to do that?
+
+git clone https://github.com/harshraja45/Url_Shortner.git
+cd Url_Shortner
